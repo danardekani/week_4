@@ -28,4 +28,11 @@ int main()
 
     //This loop will work in reverse from the first half
     //decrement numberRows by one every iteration
+    for(i = numberRows; i >= 1; i--) {
+        for(spacing = 1; spacing < i; spacing++)
+            cout << " " ;
+        for(print = i; print <= numberRows; print++)
+            cout << "*" << " ";
+        cout << endl;
+    }
 }
