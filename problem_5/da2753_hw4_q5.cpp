@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int positiveInt, i, j, k;
+    int positiveInt, spacing, print, i;
 
     cout << "Please enter a positive integer: ";
     cin >> positiveInt;
@@ -14,12 +14,12 @@ int main()
 
         //This for loop provides
         //indentation for each new row
-        for(j = 1; j < i; j++)
+        for(spacing = 1; spacing < i; spacing++)
             cout << " " ;
 
         //This for loop prints out the *
         //for each new row incrementing by 1 each iteration
-        for(k = i; k <= positiveInt; k++)
+        for(print = i; print <= positiveInt; print++)
             cout << "*" << " ";
 
         //This cout statement ends each row.
