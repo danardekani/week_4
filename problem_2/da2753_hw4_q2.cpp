@@ -1,27 +1,49 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
+    int num;
 
-    string answer;
-    int number;
-    int i = 6;
-    int num[] = {1,5,10,50,100,500,1000};
-    string romanSymbol[] = {"I","V","X","L","C","D","M"};
+    cout << "Enter decimal number: " << endl;
+    cin >> num;
 
-    //Prompt user for decimal number
-    cout << "Enter decimal number: ";
-    cin >> number;
-
-    while(number > 0)
+    while (num != 0)
     {
-        int divide = number / num[i];
-        number = number % num[i];
-        while(divide --)
+        if (num >= 1000)
         {
-            romanSymbol[i] = answer;
-            cout << answer ;
+            cout << "M";
+            num -= 1000;
         }
-        i --;
+        else if (num >= 500)
+        {
+            cout << "D";
+            num -= 500;
+        }
+        else if (num >= 100)
+        {
+            cout << "C";
+            num -= 100;
+        }
+        else if (num >= 50)
+        {
+            cout << "L";
+            num -= 50;
+        }
+        else if (num >= 10)
+        {
+            cout << "X";
+            num -= 10;
+        }
+        else if (num >= 5)
+        {
+            cout << "V";
+            num -= 5;
+        }
+        else if (num >= 1)
+            cout << "I";
+            num -= 1;
     }
+    return 0;
 }
+
