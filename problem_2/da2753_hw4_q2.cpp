@@ -3,12 +3,14 @@ using namespace std;
 
 int main()
 {
+    //Num will store user data
     int num;
 
     cout << "Enter decimal number: " << endl;
     cin >> num;
     cout << num << " is ";
 
+    //Checking each if/else statement in descending order
     while (num != 0)
     {
         if (num >= 1000)

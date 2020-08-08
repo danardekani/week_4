@@ -1,15 +1,14 @@
 #include <iostream>
 using namespace std;
 
-// driver code
 int main()
 {
     int n, k;
 
-    cout << "Enter decimal number: ";
+    cout << "Enter decimal number: " << endl;
     cin >> n;
+    cout << "The binary representation of " << n << " is ";
 
-    // Size of an integer is assumed to be 256 bits
     if (n >= 0 && n <= 8 )
     {
         for (int i = 3; i >= 0; i--)
@@ -87,4 +86,6 @@ int main()
                 cout << "0";
         }
     }
+    cout << endl;
+    return 0;
 }
