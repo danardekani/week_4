@@ -7,22 +7,22 @@ int main()
 {
 //    //SECTION A --------------------------------- SECTION A//
 
-//    double sequenceLength, geoMean, exponent, num, base = 1.0;
-//
-//    cout << "section a" << endl;
-//    cout << "Please enter the length of the sequence: ";
-//    cin >> sequenceLength;
-//    cout << "Please enter your sequence: " << endl;
-//
-//    for (int i = 1; i <= sequenceLength; i++)
-//    {
-//        cin >> num;
-//        base = base * num;
-//    }
-//    exponent = sequenceLength;
-//
-//    geoMean = pow(base, 1/exponent);
-//    cout << "The geometric mean is: " << geoMean << endl;
+    double sequenceLength, geoMean, exponent, num, base = 1.0;
+
+    cout << "section a" << endl;
+    cout << "Please enter the length of the sequence: ";
+    cin >> sequenceLength;
+    cout << "Please enter your sequence: " << endl;
+
+    for (int i = 1; i <= sequenceLength; i++)
+    {
+        cin >> num;
+        base = base * num;
+    }
+    exponent = sequenceLength;
+
+    geoMean = pow(base, 1/exponent);
+    cout << "The geometric mean is: " << geoMean << endl;
 
     //SECTION B --------------------------------- SECTION B//
 
