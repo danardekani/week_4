@@ -7,6 +7,7 @@ int main()
 
     cout << "Enter decimal number: " << endl;
     cin >> num;
+    cout << num << " is ";
 
     while (num != 0)
     {
@@ -43,7 +44,9 @@ int main()
         else if (num >= 1)
             cout << "I";
             num -= 1;
+
     }
+    cout << endl;
     return 0;
 }
 
