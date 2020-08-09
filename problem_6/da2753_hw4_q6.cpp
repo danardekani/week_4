@@ -1,9 +1,6 @@
 #include <iostream>
 using namespace std;
 
-#include <iostream>
-using namespace std;
-
 int main()
 {
     int n, i, num, even_count = 0, odd_count = 0;
@@ -25,8 +22,7 @@ int main()
             else {
                 odd_count++;
             }
-            //reduce the number of digit by 1
-            // by removing last digit of number
+            //remove last digit of number
             n = n / 10;
         }
         if (even_count > odd_count) {
