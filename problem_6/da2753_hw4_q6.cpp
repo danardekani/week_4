@@ -6,28 +6,31 @@ using namespace std;
 
 int main()
 {
-    int n, i, a;
-    int even_count = 0;
-    int odd_count = 0;
+    int n, i, num, even_count = 0, odd_count = 0;
 
     cout << "Please enter a positive integer: ";
-    cin >> n;
+    cin >> num;
 
-    for (i = 1; i < n; i++)
+    for (i = 2; i <= num; i++)
     {
-        while (n != 0)
-        {
+        even_count = 0;
+        odd_count = 0;
+        n = i;
+
+        while (n > 0) {
             //get the last digit of the number
-            a = n % 10;
-            if (a % 2 == 0)
+            if (n % 2 == 0) {
                 even_count++;
-            else
+            }
+            else {
                 odd_count++;
+            }
             //reduce the number of digit by 1
             // by removing last digit of number
             n = n / 10;
-            if (even_count > odd_count)
-                cout << i ;
+        }
+        if (even_count > odd_count) {
+            cout << i << endl;
         }
     }
 }
