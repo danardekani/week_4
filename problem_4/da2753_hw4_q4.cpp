@@ -5,8 +5,7 @@ using namespace std;
 
 int main()
 {
-//    //SECTION A --------------------------------- SECTION A//
-
+    //SECTION A --------------------------------- SECTION A//
     double sequenceLength, geoMean, exponent, num, base = 1.0;
 
     cout << "section a" << endl;
@@ -26,29 +25,20 @@ int main()
 
     //SECTION B --------------------------------- SECTION B//
 
-    double geoMeanB, exponentB, numB, exit, baseB = 1.0;
+    double geoMeanB, exponentB, numB, baseB = 1.0;
 
     cout << "section B" << endl;
     cout << "Please enter a non-empty sequence of positive integers, each one in a separate line. End your sequence by typing -1: " << endl;
-
-    int i = 1;
-    while (exit != -1)
+    cin >> numB;
+    int k = 0;
+    while (numB >= 0)
     {
+        baseB *= numB;
         cin >> numB;
-        cin >> exit;
-        baseB = baseB * numB;
-        i++;
-
-        if (numB == -1)
-        {
-            numB = 0;
-            baseB = baseB * numB;
-        }
+        k++;
     }
-    exponentB = i;
+    exponentB = k;
     geoMeanB = pow(baseB, 1/exponentB);
-    cout << "exponent is: " << i << endl;
-    cout << "The geometric mean is: " << geoMeanB << endl;
-
+    cout << geoMeanB << endl;
     return 0;
 }
