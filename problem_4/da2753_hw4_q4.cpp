@@ -1,5 +1,6 @@
 #include <iostream>
-#include <cmath>
+#include <math.h>
+#include <iomanip>
 
 using namespace std;
 
@@ -21,7 +22,7 @@ int main()
     exponent = sequenceLength;
 
     geoMean = pow(base, 1/exponent);
-    cout << "The geometric mean is: " << geoMean << endl;
+    cout << "The geometric mean is: " << setprecision(5) << geoMean << endl;
 
     //SECTION B --------------------------------- SECTION B//
 
@@ -39,6 +40,6 @@ int main()
     }
     exponentB = k;
     geoMeanB = pow(baseB, 1/exponentB);
-    cout << geoMeanB << endl;
+    cout << "the geometric mean is: " << geoMeanB << endl;
     return 0;
 }
