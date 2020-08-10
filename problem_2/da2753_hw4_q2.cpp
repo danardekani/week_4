@@ -38,15 +38,15 @@ int main()
             cout << "X";
             num -= 10;
         }
-        else if (num >= 5)
+        else if (num >= 5 && num < 10)
         {
             cout << "V";
             num -= 5;
         }
-        else if (num >= 1)
+        else if (num >= 1) {
             cout << "I";
             num -= 1;
-
+        }
     }
     cout << endl;
     return 0;
